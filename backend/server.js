@@ -21,7 +21,10 @@ const bookingRoutes = require("./routes/bookingRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "netlify https://smartappointm.netlify.app",
+  credentials: true
+}));
 app.use(express.json());
 
 /* ===== CREATE DEFAULT MANAGER ===== */
