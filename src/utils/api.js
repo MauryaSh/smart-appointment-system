@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://smart-appointment-system-3ahc.onrender.com"
+  baseURL: "http://localhost:5000/api"
 });
 
 export default api;
